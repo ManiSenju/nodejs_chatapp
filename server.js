@@ -3,7 +3,7 @@ const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
 
 const port = process.env.PORT || 3000
-const dbUrl = "mongodb+srv://manisenju:manisenju@cluster0.ba6qrzf.mongodb.net/?retryWrites=true&w=majority"
+const dbUrl = "mongodb+srv://<dbname>:<password>@cluster0.ba6qrzf.mongodb.net/?retryWrites=true&w=majority"
 const app = express()
 const http = require("http").Server(app)
 const io = require ("socket.io")(http)
